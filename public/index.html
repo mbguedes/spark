@@ -1,0 +1,180 @@
+
+<!-- Arquivo: public/index.html -->
+<!-- Crie este arquivo dentro da nova pasta 'public'. -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPARK - Soluções Digitais</title>
+    <!-- Inclui o Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inclui o arquivo CSS externo -->
+    <link rel="stylesheet" href="/assets/stylesheets/style.css">
+</head>
+<body>
+
+<!-- Header com logo e menu de navegação -->
+<header class="main-header">
+    <div class="header-content container">
+        <!-- Logo SPARK com imagem e SVG de faísca -->
+        <div class="logo-container">
+            <img src="/images/logo-header.png" alt="Logo da SPARK" class="logo-img">
+                <path d="M10.22 17.5a.75.75 0 01.07-1.07L16.29 9H13.5a.75.75 0 010-1.5h6.25a.75.75 0 01.75.75v6.25a.75.75 0 01-1.5 0v-2.79l-6.07 6.07a.75.75 0 01-1.07.07z"/>
+            </svg>
+        </div>
+
+        <!-- Botão do menu mobile (hambúrguer) -->
+        <div class="menu-mobile-btn-container">
+            <button id="menu-button" class="menu-mobile-btn">
+                <svg class="hamburguer-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Menu de navegação para desktop -->
+        <nav id="menu-desktop" class="menu-desktop">
+            <a href="#conceitos" class="menu-link">Conceitos</a>
+            <a href="#nossos-servicos" class="menu-link">Serviços</a>
+            <a href="#sobre-nos" class="menu-link">Sobre Nós</a>
+            <a href="#contato" class="menu-link">Contato</a>
+        </nav>
+    </div>
+
+    <!-- Menu mobile (aparece com o botão hambúrguer) -->
+    <nav id="menu-mobile" class="menu-mobile hidden">
+        <a href="#conceitos" class="menu-link-mobile">Conceitos</a>
+        <a href="#nossos-servicos" class="menu-link-mobile">Serviços</a>
+        <a href="#sobre-nos" class="menu-link-mobile">Sobre Nós</a>
+        <a href="#contato" class="menu-link-mobile">Contato</a>
+    </nav>
+</header>
+
+<!-- Seção principal com a promessa transformadora -->
+<main class="main-content container">
+    <section id="hero" class="hero-section">
+        <h1 class="hero-title">
+            Libertamos empresários para o estratégico<span class="spark-gold-text">,</span>
+        </h1>
+        <h2 class="hero-subtitle">
+            descomplicando o operacional.
+        </h2>
+        <p class="hero-text">
+            Somos a faísca que acende o potencial do seu negócio no mercado food. Com nosso ERP **Galileo Plus**, você foca no crescimento enquanto nós cuidamos da gestão.
+        </p>
+        <div class="hero-cta">
+            <a href="#contato" class="cta-button">
+                Fale com a gente!
+            </a>
+        </div>
+    </section>
+
+    <!-- Seção de conceitos e valor -->
+    <section id="conceitos" class="conceitos-section">
+        <h2 class="section-title">Nossa Solução, Seu Sucesso</h2>
+        <div class="grid-cards">
+            <div class="card">
+                <svg class="card-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                <h3 class="card-title">Mais Tempo</h3>
+                <p class="card-text">Automatizamos a sua operação para você ter mais tempo para se dedicar ao que realmente importa: seus clientes e fornecedores.</p>
+            </div>
+            <div class="card">
+                <svg class="card-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.5a11.955 11.955 0 01-10.618 6.484A12.001 12.001 0 0012 22a12.001 12.001 0 0010.618-13.016z"/>
+                </svg>
+                <h3 class="card-title">Menos Problemas</h3>
+                <p class="card-text">Nosso software é um "funcionário" que nunca erra, te dando dados precisos e gestão ativa para evitar surpresas no final do mês.</p>
+            </div>
+            <div class="card">
+                <svg class="card-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                </svg>
+                <h3 class="card-title">Crescimento Estratégico</h3>
+                <p class="card-text">Com a operação descomplicada, você se liberta para buscar novos fornecedores, planejar promoções e expandir sua marca.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Serviços -->
+    <section id="nossos-servicos" class="servicos-section">
+        <h2 class="section-title">Nossos Serviços</h2>
+        <div class="servico-item-container">
+            <div class="servico-item">
+                <h3 class="servico-title">Galileo Plus</h3>
+                <p class="servico-description">Solução de ERP completa para o setor food, focada na automação e eficiência da gestão de estoque, vendas, caixa e finanças. Libertamos você do operacional, permitindo que você se concentre na estratégia do seu negócio.</p>
+            </div>
+            <div class="servico-item">
+                <h3 class="servico-title">Presença Digital</h3>
+                <p class="servico-description">Criamos homepages, landing pages e marketplaces, dependendo da necessidade do cliente. Posicionamos sua marca na internet para que você atraia mais clientes e expanda seu alcance, seja com uma vitrine virtual ou um canal de vendas direto.</p>
+            </div>
+            <div class="servico-item">
+                <h3 class="servico-title">Marketing Pago</h3>
+                <p class="servico-description">Focamos no crescimento da sua marca por meio de anúncios online em plataformas como Google e redes sociais. Gerenciamos campanhas para aumentar sua visibilidade, atrair tráfego qualificado e converter mais vendas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção sobre os fundadores -->
+    <section id="sobre-nos" class="sobre-nos-section">
+        <h2 class="section-title">Conheça a Faísca por Trás da Spark</h2>
+        <div class="fundadores-grid">
+            <div class="fundador-card">
+                <img src="/images/perfilMarcio.png" alt="Foto de Marcio" class="fundador-img">
+                <h3 class="fundador-name">Marcio</h3>
+                <p class="fundador-role">Cofundador | Visão de Negócio</p>
+                <p class="fundador-quote">"Com Spark, o tempo é o nosso maior ativo, e nós o devolvemos para você."</p>
+            </div>
+            <div class="fundador-card">
+                <img src="/images/perfilMichael.png" alt="Foto de Michael" class="fundador-img">
+                <h3 class="fundador-name">Michael</h3>
+                <p class="fundador-role">Cofundador | Tecnologia e Inovação</p>
+                <p class="fundador-quote">"Criamos soluções que simplificam o complexo para você focar no essencial."</p>
+            </div>
+            <div class="fundador-card">
+                <img src="/images/perfilMarcio.png" alt="Foto de Ayron" class="fundador-img">
+                <h3 class="fundador-name">Ayron</h3>
+                <p class="fundador-role">Cofundador | Estratégia de Mercado</p>
+                <p class="fundador-quote">"Nossa missão é ser a ponte entre sua empresa e o sucesso digital."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de Contato -->
+    <section id="contato" class="contato-section">
+        <h2 class="section-title">Dê o Primeiro Passo</h2>
+        <form action="/enviar-contato" method="POST" class="contato-form">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" class="form-textarea" required></textarea>
+            </div>
+            <div class="form-submit-container">
+                <button type="submit" class="cta-button">
+                    Enviar Mensagem
+                </button>
+            </div>
+        </form>
+    </section>
+</main>
+
+<!-- Botão flutuante do WhatsApp -->
+<a href="https://wa.me/55125555555555" target="_blank" class="whatsapp-button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12.039 2c-5.518 0-9.981 4.463-9.981 9.981 0 1.936.541 3.861 1.57 5.568L2 22l4.871-1.28c1.684.92 3.593 1.442 5.168 1.442 5.517 0 9.98-4.463 9.98-9.981S17.556 2 12.039 2zm5.787 14.885c-.271.39-1.58.89-2.324.965-.74.074-1.782.112-2.824-.374-1.298-.602-2.31-1.954-2.845-3.03-.536-1.075-.483-2.006-.212-2.583.271-.577.625-.929.92-1.225.295-.296.619-.383.829-.383.21 0 .42.006.51.22.09.215.305.748.332.89.027.142.016.26-.065.374-.082.112-.51.498-.564.55-.054.053-.102.102-.047.202.553.992 1.258 1.91 2.213 2.502.261.161.547.295.733.37.186.075.311.082.404.062.271-.059.845-.34 1.157-.704.312-.364.512-.524.646-.524.134 0 .867.418 1.053.513.186.095.31.202.352.42.042.214.042.829-.462 1.564z"/>
+    </svg>
+</a>
+
+<!-- Scripts para interatividade -->
+<script src="/assets/javascripts/scripts.js"></script>
+</body>
+</html>
