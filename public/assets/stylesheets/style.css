@@ -14,6 +14,7 @@
   --cor-texto-claro: #F7FAFC; /* Branco */
   --cor-texto-cinza: #CBD5E0; /* Cinza claro */
   --cor-cinza-escuro: #2D3748; /* Cinza escuro */
+  --cor-laranja-logo: #ff5f00; /* Nova cor para o logo */
 }
 
 /* Estilos globais do corpo da página */
@@ -72,21 +73,21 @@ body {
 }
 
 .spark-gold-text {
-  color: var(--cor-principal);
+  color: var(--cor-laranja-logo);
 }
 
 .spark-icon {
   height: 1.5rem;
   width: 1.5rem;
-  color: var(--cor-principal);
+  color: var(--cor-laranja-logo);
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 .menu-desktop {
   display: none;
-  gap: 2rem;
+  gap: 1.35rem;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: 'Metrophobic';
   font-weight: bold;
 }
@@ -102,7 +103,7 @@ body {
   transition-duration: 300ms;
 }
 .menu-link:hover {
-  color: var(--cor-principal);
+  color: var(--cor-laranja-logo);
 }
 
 .menu-mobile-btn-container {
@@ -205,8 +206,9 @@ body {
 }
 
 .cta-button {
-  background-color: var(--cor-principal);
+  background-color: var(--cor-laranja-logo);
   color: #1A202C;
+  font-size: 1.3rem;
   font-weight: 700;
   padding: 0.75rem 2rem;
   border-radius: 9999px;
@@ -215,6 +217,15 @@ body {
   transition-duration: 300ms;
 }
 .cta-button:hover {
+  background-color: #F6AD55;
+}
+
+
+.hero-cta .cta-button {
+  transition: 0.5s ease-in-out;
+}
+
+.hero-cta .cta-button:hover {
   background-color: #F6AD55;
 }
 
@@ -258,7 +269,7 @@ body {
 .card-icon {
   height: 4rem;
   width: 4rem;
-  color: var(--cor-principal);
+  color: var(--cor-laranja-logo);
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1rem;
@@ -287,23 +298,43 @@ body {
 
 .servico-item-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Padrão para telas menores: um em cima do outro */
   gap: 3rem;
+}
+@media (min-width: 768px) {
+  .servico-item-container {
+    gap: 0;
+  }
 }
 
 .servico-item {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Padrão para telas menores: um em cima do outro */
   justify-content: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid #4A5568;
-  margin-bottom: 0;
+  /*border-bottom: 1px solid #4A5568;*/
+  transition: 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
+.servico-item:hover{
+  background-color:var(--cor-fundo-escuro);
+  transform: scale(1.25);
+}
+
+.servico-item .servico-description{
+  transition:0.3s ease-in-out;
+}
+
+.servico-item:hover .servico-description:hover {
+  color: var(--cor-laranja-logo);
+}
+
+
 @media (min-width: 768px) {
   .servico-item {
-    flex-direction: row;
+    flex-direction: row; /* Para telas maiores: um ao lado do outro */
     align-items: center;
+    gap: 2rem;
     margin-bottom: 3rem;
   }
 }
@@ -313,39 +344,51 @@ body {
   line-height: 1;
   font-weight: 800;
   color: #A0AEC0;
-  margin-right: 2rem;
-  text-align: left;
   transition-property: color;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 1rem; /* Adiciona espaçamento inferior para mobile */
+}
+@media (max-width: 767px) {
+  .servico-title {
+    text-align: center; /* Centraliza o título em telas pequenas */
+  }
 }
 @media (min-width: 768px) {
   .servico-title {
     text-align: right;
     width: 25%;
     font-size: 4.5rem;
+    flex-shrink: 0; /* Impede que o título seja comprimido */
   }
 }
 .servico-title:hover {
-  color: var(--cor-principal);
+  color: var(--cor-laranja-logo);
 }
 
 .servico-description {
   font-size: 1rem;
   line-height: 1.75;
   color: var(--cor-texto-cinza);
-  margin-top: 1rem;
+  flex-grow: 1;
+}
+@media (max-width: 767px) {
+  .servico-description {
+    text-align: center; /* Centraliza o texto em telas pequenas */
+    margin-top: 0;
+    max-width: 100%;
+  }
 }
 @media (min-width: 768px) {
   .servico-description {
     width: 75%;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     margin-top: 0;
   }
 }
 @media (min-width: 1024px) {
   .servico-description {
-    font-size: 1.25rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -444,7 +487,7 @@ body {
   transition: border-color 0.3s ease;
 }
 .form-input:focus, .form-textarea:focus {
-  border-color: var(--cor-principal);
+  border-color: var(--cor-laranja-logo);
 }
 
 .form-textarea {
