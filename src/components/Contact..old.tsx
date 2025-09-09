@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { Send, Phone, Mail, MapPin, CheckCircle, Loader2 } from 'lucide-react';
+import { Send, Phone, Mail, MapPin, CheckCircle } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import emailjs from '@emailjs/browser';
 
 const Contact: React.FC = () => {
   const navigate = useNavigate();
@@ -12,43 +11,12 @@ const Contact: React.FC = () => {
     telefone: '',
     mensagem: ''
   });
-  const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsLoading(true);
-
-    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-
-    if (!serviceId || !templateId || !publicKey) {
-      console.error("EmailJS environment variables are not set.");
-      alert("Erro ao enviar o formulário. A configuração do serviço de e-mail está incompleta.");
-      setIsLoading(false);
-      return;
-    }
-
-    const templateParams = {
-      from_name: formData.nome,
-      from_company: formData.empresa,
-      from_email: formData.email,
-      from_tel: formData.telefone,
-      message: formData.mensagem,
-    };
-
-    emailjs.send(serviceId, templateId, templateParams, publicKey)
-      .then((response) => {
-        console.log('E-mail enviado com sucesso!', response.status, response.text);
-        navigate('/obrigado');
-      })
-      .catch((err) => {
-        console.error('Erro ao enviar o e-mail:', err);
-        alert("Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente mais tarde.");
-      })
-      .finally(() => {
-        setIsLoading(false);
-      });
+    // Simular envio do formulário
+    console.log('Dados do formulário:', formData);
+    navigate('/obrigado');
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -170,15 +138,10 @@ const Contact: React.FC = () => {
 
               <button 
                 type="submit"
-                disabled={isLoading}
-                className="group w-full bg-gradient-to-r from-[#ff5f00] to-[#d4af37] text-white py-4 px-8 rounded-xl font-bold text-base sm:text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3 disabled:opacity-70 disabled:cursor-not-allowed"
+                className="group w-full bg-gradient-to-r from-[#ff5f00] to-[#d4af37] text-white py-4 px-8 rounded-xl font-bold text-base sm:text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3"
               >
-                {isLoading ? (
-                  <Loader2 className="w-5 h-5 animate-spin" />
-                ) : (
-                  <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-                )}
-                {isLoading ? 'Enviando...' : 'Seja nosso parceiro!'}
+                <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                Seja nosso parceiro!
               </button>
             </form>
           </div>
@@ -201,10 +164,10 @@ const Contact: React.FC = () => {
                   <CheckCircle className="w-6 h-6 text-[#d4af37] flex-shrink-0" />
                   <span className="text-gray-300">Implementação rápida e segura</span>
                 </div>
-                <div className="flex items-center gap-4">
+                {/* <div className="flex items-center gap-4">
                   <CheckCircle className="w-6 h-6 text-[#d4af37] flex-shrink-0" />
                   <span className="text-gray-300">ROI comprovado em 90 dias</span>
-                </div>
+                </div> */}
               </div>
             </div>
 
