@@ -35,10 +35,10 @@ const FAQ: React.FC = () => {
     <section id="faq" className="py-20 bg-gray-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0a1128] mb-4">
+          <h2 className="text-4xl lg:text-5xl font-bold text-[#0a1128] mb-4">
             Perguntas <span className="bg-gradient-to-r from-[#ff5f00] to-[#d4af37] bg-clip-text text-transparent">Frequentes</span>
           </h2>
-          <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
+          <p className="text-xl text-gray-600 leading-relaxed">
             Tire suas dúvidas sobre nossas soluções digitais
           </p>
         </div>
@@ -53,7 +53,7 @@ const FAQ: React.FC = () => {
                 onClick={() => setOpenFAQ(openFAQ === index ? null : index)}
                 className="w-full p-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
               >
-                <h3 className="text-base sm:text-lg font-semibold text-[#0a1128] pr-4">{faq.question}</h3>
+                <h3 className="text-lg font-semibold text-[#0a1128] pr-4">{faq.question}</h3>
                 <div className="flex-shrink-0">
                   {openFAQ === index ? (
                     <ChevronUp className="w-5 h-5 text-[#ff5f00]" />

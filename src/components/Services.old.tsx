@@ -71,10 +71,10 @@ const Services: React.FC = () => {
         <div className={`text-center mb-16 transition-all duration-1000 transform ${
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
         }`}>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0a1128] mb-4">
+          <h2 className="text-4xl lg:text-5xl font-bold text-[#0a1128] mb-4">
             Nossas <span className="bg-gradient-to-r from-[#ff5f00] to-[#d4af37] bg-clip-text text-transparent">Soluções</span>
           </h2>
-          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Tecnologia de ponta desenvolvida especialmente para pequenos e médios empresários que querem dominar o mercado digital
           </p>
         </div>
@@ -95,7 +95,7 @@ const Services: React.FC = () => {
                   <div className="w-16 h-16 bg-gradient-to-r from-[#ff5f00] to-[#d4af37] rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                     <IconComponent className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl sm:text-2xl font-bold text-[#0a1128] mb-3">{service.title}</h3>
+                  <h3 className="text-2xl font-bold text-[#0a1128] mb-3">{service.title}</h3>
                   <p className="text-gray-600 leading-relaxed mb-6">{service.description}</p>
                 </div>
 
@@ -121,7 +121,7 @@ const Services: React.FC = () => {
         <div className={`relative max-w-4xl mx-auto transition-all duration-1000 delay-600 transform ${
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
         }`}>
-          <h3 className="text-xl sm:text-2xl font-bold text-[#0a1128] text-center mb-8">
+          <h3 className="text-2xl font-bold text-[#0a1128] text-center mb-8">
             Veja nossas soluções em ação
           </h3>
           

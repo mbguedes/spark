@@ -36,10 +36,10 @@ const Contact: React.FC = () => {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
             Seja nosso <span className="bg-gradient-to-r from-[#ff5f00] to-[#d4af37] bg-clip-text text-transparent">Parceiro!</span>
           </h2>
-          <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
             Condições especiais para novas parcerias. Transforme seu negócio com nossa expertise em soluções digitais.
           </p>
         </div>
@@ -48,7 +48,7 @@ const Contact: React.FC = () => {
           {/* Contact Form */}
           <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
             <div className="mb-8">
-              <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">Entre em contato</h3>
+              <h3 className="text-2xl font-bold text-white mb-2">Entre em contato</h3>
               <p className="text-gray-300">Preencha o formulário e nossa equipe entrará em contato em até 24h</p>
             </div>
 
@@ -138,7 +138,7 @@ const Contact: React.FC = () => {
 
               <button 
                 type="submit"
-                className="group w-full bg-gradient-to-r from-[#ff5f00] to-[#d4af37] text-white py-4 px-8 rounded-xl font-bold text-base sm:text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3"
+                className="group w-full bg-gradient-to-r from-[#ff5f00] to-[#d4af37] text-white py-4 px-8 rounded-xl font-bold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3"
               >
                 <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                 Seja nosso parceiro!
@@ -149,7 +149,7 @@ const Contact: React.FC = () => {
           {/* Contact Info & Benefits */}
           <div className="space-y-8">
             <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
-              <h3 className="text-xl sm:text-2xl font-bold text-white mb-6">Por que escolher a SPARK?</h3>
+              <h3 className="text-2xl font-bold text-white mb-6">Por que escolher a SPARK?</h3>
               
               <div className="space-y-4">
                 <div className="flex items-center gap-4">
@@ -172,7 +172,7 @@ const Contact: React.FC = () => {
             </div>
 
             <div className="bg-gradient-to-r from-[#ff5f00]/20 to-[#d4af37]/20 backdrop-blur-md rounded-2xl p-8 border border-[#ff5f00]/30">
-              <h3 className="text-lg sm:text-xl font-bold text-white mb-4">Contatos diretos</h3>
+              <h3 className="text-xl font-bold text-white mb-4">Contatos diretos</h3>
               
               <div className="space-y-4">
                 <div className="flex items-center gap-3">

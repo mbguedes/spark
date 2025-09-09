@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
               <span className="text-sm font-medium text-white">Transformação Digital</span>
             </div>
             
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+            <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
               <span className="text-white">SPARK</span>
               <br />
               <span className="bg-gradient-to-r from-[#ff5f00] to-[#d4af37] bg-clip-text text-transparent">
@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
               </span>
             </h1>
             
-            <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-lg">
+            <p className="text-xl text-gray-300 leading-relaxed max-w-lg">
               Automatize seus processos, domine a tecnologia e posicione seu negócio no mercado digital. 
               Soluções completas para empresários visionários.
             </p>
@@ -54,7 +54,7 @@ const Hero: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4">
             <button 
               onClick={scrollToContact}
-              className="group inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#ff5f00] to-[#d4af37] text-white px-8 py-4 rounded-full font-bold text-base sm:text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
+              className="group inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#ff5f00] to-[#d4af37] text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
             >
               Venha conhecer nossas soluções
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />

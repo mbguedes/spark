@@ -86,7 +86,7 @@ const Navigation: React.FC = () => {
           <div className="md:hidden bg-[#0a1128]/95 backdrop-blur-md border-t border-[#ff5f00]/20">
             <div className="px-2 pt-2 pb-3 space-y-1">
               <button 
-                onClick={() => scrollToSection('sobre')}
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                 className="block w-full text-left px-3 py-2 text-white hover:text-[#ff5f00] transition-colors duration-300"
               >
                 Sobre nós
