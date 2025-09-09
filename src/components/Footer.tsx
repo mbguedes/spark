@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
               <button 
                 onClick={() => {
                   const element = document.getElementById('sobre');
-                  if (element) element.scrollIntoView({ behavior: 'smooth' });
+                  if (element) window.scrollTo({ top: element.offsetTop, behavior: 'smooth' });
                 }}
                 className="block text-gray-400 hover:text-[#ff5f00] transition-colors duration-300"
               >

@@ -47,7 +47,7 @@ const Navigation: React.FC = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             <button 
-              onClick={() => scrollToSection('sobre')}
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               className="text-white hover:text-[#ff5f00] transition-colors duration-300 font-medium"
             >
               Sobre nós

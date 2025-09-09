@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+    <section id="sobre" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#0a1128] via-[#1a2248] to-[#0a1128]"></div>
       
